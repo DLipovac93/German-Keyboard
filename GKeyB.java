@@ -64,5 +64,26 @@ public class GKeyB implements ActionListener {
             functionButtons[i].setFocusable(false);
             functionButtons[i].setBorder(border);
         }
+
+        clr.setFont(myFont);
+        clr.setFocusable(false);
+        clr.setBounds(1130, 340, 180, 100);
+        clr.addActionListener(this);
+        board.add(clr);
+
+        ply.setFont(myFont);
+        ply.setFocusable(false);
+        ply.setBounds(1130, 10, 170, 100);
+        ply.addActionListener(this);
+        board.add(ply);
+
+        spc.setFont(myFont);
+        spc.setFocusable(false);
+        spc.setBounds(1130, 120, 120, 100);
+        spc.addActionListener(this);
+        board.add(spc);
+
+        board.add(textField);
+        board.setVisible(true);
     }
 }
